@@ -1,5 +1,6 @@
 const initialState = {
-    webcams: []
+    webcams: [], 
+    test: 'Its working mf*kas!!!! '
 }
 
 export const reducer = (state = initialState, action) => {
