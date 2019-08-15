@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Loader from 'react-loader-spinner'
+import Loader from 'react-loader-spinner' 
+import Webcam from './Webcam'
 
 const WebCamList = (props) => {
     return  (<>
@@ -14,13 +15,18 @@ const WebCamList = (props) => {
         width="100" /> : 'Get info'
         }
         </button>
+        {props.webcams && 
+        props.webcams.map(item => (
+            <Webcam key={item.name} webcam ={item} />
+        ))}
     </>)
 
 }
 
 const mapStateToProps = state =>{
     return {
-        isLoading: state.isLoading
+        isLoading: state.isLoading,
+        webcams: state.webcams
     };
   };
 
