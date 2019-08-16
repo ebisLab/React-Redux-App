@@ -1,1 +1,3 @@
-export {getData, FETCHING_WEBCAM_DATA} from './webCamActions';
+export {getData, FETCHING_WEBCAM_DATA_START} from './webCamActions';
+// export const FETCHING_WEBCAM_DATA_SUCCESS = 'FETCHING_WEBCAM_DATA_SUCCESS';
+// export const FETCHING_WEBCAM_DATA_FAILURE = 'FETCHING_WEBCAM_DATA_FAIL';
