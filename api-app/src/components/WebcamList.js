@@ -19,7 +19,7 @@ const WebCamList = (props) => {
         </button>
         {props.webcams && 
         props.webcams.map(item => (
-            <Webcam key={item.name} webcam ={item} />
+            <Webcam key={item.title} webcam ={item} />
         ))}
     </>)
 

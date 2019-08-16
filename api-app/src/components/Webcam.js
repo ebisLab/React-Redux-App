@@ -5,16 +5,9 @@ import Loader from 'react-loader-spinner'
 
 const Webcam = (props) => {
     return  (<>
-    <h4>Hello</h4>
+    <h4>{props.webcam.title}</h4>
     </>)
 
 }
-
-// const mapStateToProps = state =>{
-//     return {
-//         isLoading: state.isLoading,
-//         webcams: state.webcams
-//     };
-//   };
 
 export default /*connect(mapStateToProps,{})*/(Webcam);
