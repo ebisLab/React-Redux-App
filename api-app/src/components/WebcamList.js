@@ -5,7 +5,7 @@ import Webcam from './Webcam'
 
 const WebCamList = (props) => {
     return  (<>
-    <h1>Welcome to Studio Ghibili</h1>
+    <h1>Welcome to Studio Ghibiliii</h1>
     <button>
         {props.isLoading ?
         <Loader

@@ -1,0 +1,1 @@
+export {getData, FETCHING_WEBCAM_DATA} from './webCamActions';

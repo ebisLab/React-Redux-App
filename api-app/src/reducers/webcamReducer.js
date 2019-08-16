@@ -1,4 +1,4 @@
-import {FETCHING_WEBCAM_DATA} from '../actions/webCamActions'
+import {FETCHING_WEBCAM_DATA} from '../actions'
 
 const initialState = {
     webcams: [], 
@@ -11,7 +11,9 @@ export const reducer = (state = initialState, action) => {
 
         case 'FETCHING_WEBCAM_DATA':
             return {
-                
+                ...state,
+                isLoading: true,
+                error: ''
             }
         default:
             return state;
