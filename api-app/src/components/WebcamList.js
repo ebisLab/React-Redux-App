@@ -3,10 +3,12 @@ import {connect} from 'react-redux';
 import Loader from 'react-loader-spinner' 
 import Webcam from './Webcam'
 
+import {getData} from '../actions';
+
 const WebCamList = (props) => {
     return  (<>
     <h1>Welcome to Studio Ghibiliii</h1>
-    <button>
+    <button onClick={props.getData}>
         {props.isLoading ?
         <Loader
         type="Puff"
@@ -30,4 +32,4 @@ const mapStateToProps = state =>{
     };
   };
 
-export default connect(mapStateToProps,{})(WebCamList);
+export default connect(mapStateToProps,{getData})(WebCamList);
