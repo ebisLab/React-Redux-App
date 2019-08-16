@@ -14,9 +14,12 @@ export const getData = () => {
             //component is getting data from reducer
             dispatch({type: FETCHING_WEBCAM_DATA_SUCCESS, payload: res.data})
             console.log(res)
+
+           // axios.post(`private api`) //second argument ... pass in object
         })
         .catch(err =>{ 
             dispatch({type: FETCHING_WEBCAM_DATA_FAILURE, payload: err.response})})
 
     }
+    
 }

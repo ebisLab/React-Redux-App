@@ -10,4 +10,4 @@ const Webcam = (props) => {
 
 }
 
-export default /*connect(mapStateToProps,{})*/(Webcam);
+export default (Webcam);

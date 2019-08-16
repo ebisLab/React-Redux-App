@@ -7,7 +7,7 @@ import {getData} from '../actions';
 
 const WebCamList = (props) => {
     return  (<>
-    <h1>Welcome to Studio Ghibiliii</h1>
+    <h1>Welcome to Studio Ghibili</h1>
     <button onClick={props.getData}>
         {props.isLoading ?
         <Loader
